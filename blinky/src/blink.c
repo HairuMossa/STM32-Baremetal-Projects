@@ -16,7 +16,7 @@ int main(void){
         GPIOD->ODR |= (1U << 13); // Turn on LED at PD13
         delayMs(5000);
 
-        // GPIOD->ODR &= ~(1U << 13); // Turn off LED at PD13
+        GPIOD->ODR &= ~(1U << 13); // Turn off LED at PD13
         delayMs(5000);
     }
 }
