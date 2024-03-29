@@ -1,6 +1,7 @@
 #include "stm32f407xx.h"
 
 
+
 // SPI communication is established between the MCU and the Accelerometer
 // from the STM32F407VG discovery datasheet the SDA and SCL connections are as follows
 // PA5 - SPI1 SCK
@@ -31,6 +32,7 @@ int main(void){
     GPIOA->MODER |= (1U<<11);  
     GPIOA->MODER &= ~(1U<<10); 
     */ 
+   
 
     GPIOA->MODER |= (0x2<<12); // PA6
     // or
